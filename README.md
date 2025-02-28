@@ -100,6 +100,56 @@ Before you begin, ensure you have the following installed:
 ### 3. **Browser Not Opening**
 - If the browser does not open automatically, manually navigate to `http://127.0.0.1:7860/`.
 
+
+## Running the Chatbot with a `.bat` File (Windows)
+
+To make it easier to run the chatbot on your computer, you can create a `.bat` file. Here’s how:
+
+1. **Create a `.bat` File**:
+   - Open Notepad or any text editor.
+   - Paste the following script:
+     ```batch
+     @echo off
+     "C:\Users\XYZ\miniconda3\python.exe" "D:/Directory/chatbot.py"
+     timeout /t 5 /nobreak >nul
+     start http://127.0.0.1:7860/
+     ```
+   1.1 **Replace the Python Directory**  
+      Replace the placeholder `C:\Users\XYZ\miniconda3\python.exe` with your actual Python installation path.  
+      You can find your Python directory using one of the following methods:
+   
+      - **Via Python Script in IDE:**
+        Run the following script in your Python IDE or interpreter:
+        ```python
+        import sys
+        print("Python Directory:", sys.executable)
+        ```
+   
+      - **Using the `which` Command (Linux/Mac) or `where` Command (Windows):**
+        - **Linux/Mac:**
+          ```bash
+          which python
+          ```
+        - **Windows:**
+          ```batch
+          where python
+          ```
+   1.2 **Replace the Repository Directory**  
+      Replace the placeholder `D:/Directory/chatbot.py` with the directory where this repository is located on your machine.  
+      For example, if you cloned the repository to `C:/Projects/chatbot`, update the path accordingly.
+       
+2. **Save the File**:
+   - Save the file with a `.bat` extension, e.g., `run_chatbot.bat`.
+   - Make sure to select "All Files" in the "Save as type" dropdown to avoid saving it as a `.txt` file.
+
+3. **Run the `.bat` File**:
+   - Double-click the `run_chatbot.bat` file to run the chatbot.
+   - The script will:
+     - Run the `chatbot.py` script.
+     - Wait for 5 seconds to ensure the server is ready.
+     - Open your default browser to `http://127.0.0.1:7860/`.
+
+
 ## Contributing
 
 Contributions are welcome! 
