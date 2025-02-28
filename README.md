@@ -139,11 +139,11 @@ To make it easier to run the chatbot on your computer, you can create a `.bat` f
       For example, if you cloned the repository to `C:/Projects/chatbot`, update the path accordingly.
        
 2. **Save the File**:
-   - Save the file with a `.bat` extension, e.g., `run_chatbot.bat`.
+   - Save the file with a `.bat` extension, e.g., `Run_ChatBot.bat`.
    - Make sure to select "All Files" in the "Save as type" dropdown to avoid saving it as a `.txt` file.
 
 3. **Run the `.bat` File**:
-   - Double-click the `run_chatbot.bat` file to run the chatbot.
+   - Double-click the `Run_ChatBot.bat` file to run the chatbot.
    - The script will:
      - Run the `chatbot.py` script.
      - Wait for 5 seconds to ensure the server is ready.
