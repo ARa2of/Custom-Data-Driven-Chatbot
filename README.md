@@ -104,8 +104,6 @@ Before you begin, ensure you have the following installed:
 
 Contributions are welcome! 
 
-## License
-Open-Source. 
 ---
 Enjoy using your **Custom Data-Driven Chatbot**! If you have any questions or issues, feel free to open an issue on GitHub.
 ---
