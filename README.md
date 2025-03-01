@@ -100,7 +100,11 @@ Before you begin, ensure you have the following installed:
 ### 3. **Browser Not Opening**
 - If the browser does not open automatically, manually navigate to `http://127.0.0.1:7860/`.
 
-
+## Create a link to share the chatbot with others for 72 hours
+- Open `chatbot.py`, and edit `ChatWeb.launch` (last line of the code) by switching `share` to `True` as:
+```bash
+ChatWeb.launch(server_name="0.0.0.0", server_port=7860, share=False)
+```
 ## Running the Chatbot with a `.bat` File (Windows)
 
 To make it easier to run the chatbot on your computer, you can create a `.bat` file. Here’s how:
