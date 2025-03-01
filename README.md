@@ -48,15 +48,15 @@ Before you begin, ensure you have the following installed:
 - The chatbot will launch a Gradio interface in your browser at `http://127.0.0.1:7860/`.
 
 ### 3. Create the Database
-- For the first time you use the chatbot, press on the button "Create/Update Database (Using your own files)" to create the database. 
-- For any new files/docs you want to incroporate in the database, add these to the 'Data' folder and press again on the 'Create/Update Database (Using your own files)' button, you can delete the files/docs from 'Data' folder after updating the database. 
+- For the first time you use the chatbot, press on the button `Create/Update Database (Using your own files)` to create the database. 
+- For any new files/docs you want to incroporate in the database, add these to the `Data` folder and press again on the `Create/Update Database (Using your own files)` button, you can delete the files/docs from `Data` folder after updating the database. 
 
 ### 4. Interact with the Chatbot
 - Type your questions in the chat interface.
 - The chatbot will retrieve relevant information from your data and provide responses.
 
 ### 4. Manage the Database
-- **Create/Update Database**: Click the "Create/Update Database" button to process your data and update the chatbot's knowledge base.
+- **Create/Update Database**: Click the `Create/Update Database` button to process your data and update the chatbot's knowledge base.
 - **Update Memory**: Click the "Update Memory" button to save the conversation history to the database.
 
 ### 5. Clear Conversation History
@@ -110,7 +110,8 @@ To make it easier to run the chatbot on your computer, you can create a `.bat` f
    - Paste the following script:
      ```batch
      @echo off
-     "C:\Users\XYZ\miniconda3\python.exe" "D:/Directory/chatbot.py"
+     set BAT_DIR=%~dp0
+     "C:\Users\XYZ\miniconda3\python.exe" "%BAT_DIR%chatbot.py"
      timeout /t 5 /nobreak >nul
      start http://127.0.0.1:7860/
      ```
@@ -134,13 +135,11 @@ To make it easier to run the chatbot on your computer, you can create a `.bat` f
           ```batch
           where python
           ```
-   1.2 **Replace the Repository Directory**  
-      Replace the placeholder `D:/Directory/chatbot.py` with the directory where this repository is located on your machine.  
-      For example, if you cloned the repository to `C:/Projects/chatbot`, update the path accordingly.
-       
+      
 2. **Save the File**:
    - Save the file with a `.bat` extension, e.g., `Run_ChatBot.bat`.
    - Make sure to select "All Files" in the "Save as type" dropdown to avoid saving it as a `.txt` file.
+   - Make sure the `.bat` file is saved in the same directory as the `chatbot.py`.
 
 3. **Run the `.bat` File**:
    - Double-click the `Run_ChatBot.bat` file to run the chatbot.
