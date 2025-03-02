@@ -108,11 +108,11 @@ ChatWeb.launch(server_name="0.0.0.0", server_port=7860, share=False)
 ```
 ## Running the Chatbot with a `.bat` File (Windows)
 
-To make it easier to run the chatbot on your computer, you can create a `.bat` file. Here’s how:
+To make it easier to run the chatbot on your computer you can use .bat file, by editing `Run_ChatBot.bat` file. Here’s how:
 
-1. **Create a `.bat` File**:
-   - Open Notepad or any text editor.
-   - Paste the following script:
+1. **Edit `Run_ChatBot.bat` File**:
+   - Open `Run_ChatBot.bat` using Notepad or any text editor.
+   - Below is the script included:
      ```batch
      @echo off
      set BAT_DIR=%~dp0
