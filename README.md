@@ -64,10 +64,11 @@ Before you begin, ensure you have the following installed:
 
 ## Folder Structure
 - **`Data`**: Place your data files (PDFs, TXTs, CSVs, DOCX, XLSX) here.
-- **`Database`**: Stores the database files. Do not modify this folder manually.
 - **`Memory`**: Stores the conversation history and memory files.
 - **`chatbot.py`**: The main script for the chatbot.
-
+- **`Run_ChatBot.bat`**: To run the Chatbot with a `.bat` File (Windows).
+- **`Database`**: This will be automatically created once you click on `Create/Update Database (Using your own files)`
+  
 ## Customization
 
 ### Change the Chatbot's Name and Description
