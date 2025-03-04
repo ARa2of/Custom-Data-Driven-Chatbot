@@ -30,18 +30,12 @@ def open_browser():
 # Start the browser in a separate thread
 threading.Thread(target=open_browser).start()
 
-# === Function to Save & Load History ===
+# === Function to Save History ===
 def save_history(message):
     # Open the file in append mode and add the message
     with open(Historylog, "a") as f:
         f.write(f"{message}\n")
-                
-def load_history():
-    if os.path.exists(Historylog):
-        with open(Historylog, "r", encoding="utf-8") as f:
-            return f.read()  # Reads the entire file as a string
-    return ""  # Returns an empty string if the file doesn't exis
-
+        
 # === Load Stored Embeddings ===
 embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
 vectordb = Chroma(persist_directory=DB_PATH, embedding_function=embedding)
