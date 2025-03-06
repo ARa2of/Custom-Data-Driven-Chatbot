@@ -11,7 +11,7 @@ Welcome to the **Custom Data-Driven Chatbot** repository! This project allows yo
 ## Prerequisites
 Before you begin, ensure you have the following installed:
 - **Python 3.8 or higher**
-- **OpenAI API Key**: You need an API key from OpenAI to use the GPT-4 model.
+- **OpenAI API Key**: You need an API key from OpenAI to use the LLM models.
 
 ## Installation
 
